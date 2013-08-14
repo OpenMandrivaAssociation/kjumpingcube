@@ -1,5 +1,5 @@
 Name:		kjumpingcube
-Version:	4.10.5
+Version:	4.11.0
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
@@ -35,6 +35,9 @@ this you can gain more fields and finally win the board over.
 %makeinstall_std -C build
 
 %changelog
+* Wed Aug 14 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.11.0-1
+- New version 4.11.0
+
 * Wed Jul 03 2013 Andrey Bondrov <andrey.bondrov@rosalab.ru> 1:4.10.5-1
 - New version 4.10.5
 
