@@ -1,6 +1,6 @@
 Name:		kjumpingcube
 Version:	4.14.3
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
