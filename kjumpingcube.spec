@@ -1,6 +1,6 @@
 Name:		kjumpingcube
 Version:	15.08.0
-Release:	1
+Release:	2
 Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
