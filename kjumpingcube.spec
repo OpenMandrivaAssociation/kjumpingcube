@@ -11,6 +11,7 @@ BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
+BuildRequires:	cmake(Qt5Test)
 
 %description
 KJumpingCube is a tactical one or two-player game. The playing field
