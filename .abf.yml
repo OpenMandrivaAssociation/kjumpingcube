@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kjumpingcube-15.08.0.tar.xz: f8eebf1eba8d71f049e8a9bd9c6996369e94ebe0
+sources:
+  kjumpingcube-15.08.1.tar.xz: ae824b775a1741704d4acd560efe2e07d270df3a
