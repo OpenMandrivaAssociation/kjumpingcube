@@ -1,5 +1,5 @@
 Name:		kjumpingcube
-Version:	15.08.3
+Version:	15.12.0
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
