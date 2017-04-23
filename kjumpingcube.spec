@@ -1,12 +1,12 @@
 Name:		kjumpingcube
-Version:	16.12.2
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=kjumpingcube
-Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -22,14 +22,13 @@ KJumpingCube is a tactical one or two-player game. The playing field
 consists of squares that contains points which can be increased. By
 this you can gain more fields and finally win the board over.
 
-%files
+%files -f %{name}.lang
 %{_bindir}/kjumpingcube
 %{_datadir}/applications/org.kde.kjumpingcube.desktop
 %{_datadir}/kjumpingcube
 %{_datadir}/config.kcfg/kjumpingcube.kcfg
 %{_iconsdir}/hicolor/*/apps/kjumpingcube.png
 %{_datadir}/kxmlgui5/kjumpingcube
-%doc %{_docdir}/*/*/kjumpingcube
 
 #------------------------------------------------------------------------------
 
@@ -42,3 +41,4 @@ this you can gain more fields and finally win the board over.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
