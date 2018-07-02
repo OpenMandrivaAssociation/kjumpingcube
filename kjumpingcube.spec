@@ -13,10 +13,20 @@ BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5KDEGames)
 BuildRequires:	cmake(Qt5Test)
+BuildRequires:	cmake(Qt5Widgets)
+BuildRequires:	cmake(Qt5Svg)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(KF5Notifications)
 BuildRequires:	cmake(KF5DocTools)
-BuildRequires:	cmake(KF5KDELibs4Support)
+BuildRequires:	cmake(KF5CoreAddons)
+BuildRequires:	cmake(KF5Config)
+BuildRequires:	cmake(KF5ConfigWidgets)
+BuildRequires:	cmake(KF5Crash)
+BuildRequires:	cmake(KF5DBusAddons)
+BuildRequires:	cmake(KF5KIO)
+BuildRequires:	cmake(KF5I18n)
+BuildRequires:	cmake(KF5XmlGui)
+BuildRequires:	cmake(KF5WidgetsAddons)
 
 %description
 KJumpingCube is a tactical one or two-player game. The playing field
