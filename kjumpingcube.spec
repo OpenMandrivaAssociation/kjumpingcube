@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kjumpingcube
-Version:	 18.12.1
+Version:	 18.12.2
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
@@ -38,6 +38,7 @@ this you can gain more fields and finally win the board over.
 %{_datadir}/applications/org.kde.kjumpingcube.desktop
 %{_datadir}/kjumpingcube
 %{_datadir}/config.kcfg/kjumpingcube.kcfg
+%{_datadir}/metainfo/org.kde.kjumpingcube.appdata.xml
 %{_iconsdir}/hicolor/*/apps/kjumpingcube.png
 
 #------------------------------------------------------------------------------
