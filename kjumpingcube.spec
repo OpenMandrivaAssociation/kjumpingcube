@@ -1,7 +1,7 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kjumpingcube
-Version:	 18.12.3
-Release:	2
+Version:	 19.04.0
+Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
@@ -34,6 +34,7 @@ consists of squares that contains points which can be increased. By
 this you can gain more fields and finally win the board over.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/kjumpingcube.categories
 %{_bindir}/kjumpingcube
 %{_datadir}/applications/org.kde.kjumpingcube.desktop
 %{_datadir}/kjumpingcube
