@@ -1,13 +1,13 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kjumpingcube
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=kjumpingcube
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
