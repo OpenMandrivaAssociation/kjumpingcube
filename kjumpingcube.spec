@@ -1,6 +1,6 @@
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kjumpingcube
-Version:	20.04.1
+Version:	20.04.2
 Release:	1
 Epoch:		1
 Summary:	A tactical game for number-crunchers
