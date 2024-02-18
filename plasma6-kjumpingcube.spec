@@ -1,12 +1,19 @@
+%define git 20240218
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-kjumpingcube
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://games.kde.org/game.php?game=kjumpingcube
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/games/kjumpingcube/-/archive/%{gitbranch}/kjumpingcube-%{gitbranchd}.tar.bz2#/kjumpingcube-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kjumpingcube-%{version}.tar.xz
+%endif
 BuildRequires:	cmake
 BuildRequires:	ninja
 BuildRequires:	cmake(ECM)
@@ -44,7 +51,7 @@ this you can gain more fields and finally win the board over.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kjumpingcube-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kjumpingcube-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
