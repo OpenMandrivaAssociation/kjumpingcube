@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		plasma6-kjumpingcube
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
@@ -41,6 +41,7 @@ this you can gain more fields and finally win the board over.
 
 %files -f kjumpingcube.lang
 %{_datadir}/qlogging-categories6/kjumpingcube.categories
+%{_datadir}/qlogging-categories6/kjumpingcube.renamecategories
 %{_bindir}/kjumpingcube
 %{_datadir}/applications/org.kde.kjumpingcube.desktop
 %{_datadir}/kjumpingcube
