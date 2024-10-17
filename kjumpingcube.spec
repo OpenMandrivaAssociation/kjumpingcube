@@ -6,7 +6,7 @@ Epoch:		1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=kjumpingcube
+URL:		https://games.kde.org/game.php?game=kjumpingcube
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake
 BuildRequires:	ninja
