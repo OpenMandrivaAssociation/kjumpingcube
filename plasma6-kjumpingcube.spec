@@ -8,7 +8,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://games.kde.org/game.php?game=kjumpingcube
+URL:		https://games.kde.org/game.php?game=kjumpingcube
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/kjumpingcube/-/archive/%{gitbranch}/kjumpingcube-%{gitbranchd}.tar.bz2#/kjumpingcube-%{git}.tar.bz2
 %else
