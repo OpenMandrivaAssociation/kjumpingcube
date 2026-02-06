@@ -3,7 +3,7 @@
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 70 ] && echo -n un; echo -n stable)
 Name:		kjumpingcube
-Version:	25.12.1
+Version:	25.12.2
 Release:	%{?git:0.%{git}.}1
 Summary:	A tactical game for number-crunchers
 Group:		Graphical desktop/KDE
